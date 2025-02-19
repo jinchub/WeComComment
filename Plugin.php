@@ -85,6 +85,10 @@ class WeComComment_Plugin implements Typecho_Plugin_Interface
         
         $url = "https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token=$token";
         $data = [
+            // 部门id
+            // "toparty" => $toUser,
+
+            // 用户id
             "touser" => $toUser,
             "msgtype" => "text",
             "agentid" => $agentId,
